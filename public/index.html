@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>Live Scoring</title>
+    <script src="https://cdn.socket.io/socket.io-1.4.3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            background-color: #444444;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+        }
+        .side {
+            float: left;
+            width: 50%;
+            height: 800px;
+            margin: 0;
+            padding: 0;
+        }
+        #blueSide {
+            background-color: #1155BB;
+        }
+        #redSide {
+            background-color: #BB5511;
+        }
+        
+        .score {
+            font-size: 36pt;
+            width: 100%;
+            text-align: center;
+            margin-top: 320px;
+        }
+        
+    </style>
+</HEAD>
+<BODY>
+    <div id="blueSide" class="side">
+        <p id="blueScore" class="score">0</p>
+    </div>
+    <div id="redSide" class="side">
+        <p id="redScore" class="score">0</p>
+    </div>
+</BODY>
+</HTML>
